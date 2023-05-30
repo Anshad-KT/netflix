@@ -1,5 +1,5 @@
 export interface DiscoverModel{
-    url?:string 
+    url?:string | undefined 
     title?:string,
     isSmall?:boolean
    

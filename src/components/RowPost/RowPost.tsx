@@ -11,7 +11,7 @@ import { iframeType } from "../../models/YoutubeModels";
 const RowPost: React.FC<DiscoverModel> = (props: DiscoverModel) => {
   const [movie, setMovie] = useState<Originals[]>([]);
   const [url, setUrl] = useState<string>("");
-
+  
   useEffect(() => {
     axios
       .get(props.url)

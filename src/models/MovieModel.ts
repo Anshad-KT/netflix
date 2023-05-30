@@ -1,12 +1,13 @@
 export type Movie = {
     adult: boolean;
     backdrop_path: string | null;
-    belongs_to_collection: null | any; // You can replace 'any' with a specific type if you have more details about the collection
+    belongs_to_collection: null | any;
     budget: number;
     genres: {
       id: number;
       name: string;
     }[];
+    name:string;
     homepage: string;
     id: number;
     imdb_id: string;

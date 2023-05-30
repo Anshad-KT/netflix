@@ -7,7 +7,7 @@ import { Movie } from '../../models/MovieModel';
 import { DiscoverModel } from "../../models/DiscoverModels";
 
 
-const Banner = (props:DiscoverModel) => {
+const Banner:React.FC<DiscoverModel> = (props:DiscoverModel) => {
   const [banner, setBanner] = useState<Movie>();
   function getRandomInt(max: number): number {
    
@@ -20,8 +20,8 @@ const Banner = (props:DiscoverModel) => {
     axios
       .get(props.url)
       .then((res) => {
-        console.log(res.data.results);
-        setBanner(res.data.results[randomNumber]);
+        console.log(res.data.results[15]);
+        setBanner(res.data.results[15]);
       });
   }, [props.url]);
 
@@ -31,7 +31,7 @@ const Banner = (props:DiscoverModel) => {
 
       <div className="content">
         
-         <h1 className="title">{banner?.original_title}</h1>
+         <h1 className="title">{banner?.original_title || banner?.name} </h1>
         <div className="banner-buttonss">
           <button className="button">Play</button>
           <button className="button">My List</button>

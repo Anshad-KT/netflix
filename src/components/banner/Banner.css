@@ -1,13 +1,14 @@
 .banner{
   
     background-size: cover;
-    height: 445px;
+    height: 680px;
     color: white;
+    
     
 }
 
 .content{
-    padding-top: 140px;
+    padding-top: 245px;
     height: 190px;
     padding-left: 15px;
 }
@@ -31,6 +32,7 @@
     background-color: rgba(51, 51, 51, 0.5);
     cursor: pointer;
     margin-right: 1rem;
+    
 }
 
 .button:hover{
@@ -48,6 +50,6 @@
 }
 
 .fade{
-    height: 7.4rem;
+    height: 22.4rem;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
 }
