@@ -21,7 +21,7 @@ const Banner:React.FC<DiscoverModel> = (props:DiscoverModel) => {
       .get(props.url)
       .then((res) => {
         console.log(res.data.results[15]);
-        setBanner(res.data.results[15]);
+        setBanner(res.data.results[randomNumber]);
       });
   }, [props.url]);
 

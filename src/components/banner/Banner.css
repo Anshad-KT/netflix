@@ -8,7 +8,7 @@
 }
 
 .content{
-    padding-top: 245px;
+    padding-top: 215px;
     height: 190px;
     padding-left: 15px;
 }
@@ -16,7 +16,8 @@
 .title{
     font-size: 3rem;
     font-weight: 800;
-    padding-bottom: 0.3rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
 }
 
 .button{
@@ -28,7 +29,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     background-color: rgba(51, 51, 51, 0.5);
     cursor: pointer;
     margin-right: 1rem;
